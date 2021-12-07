@@ -77,11 +77,11 @@ type vector struct {
 
 func load_vector() (vector, bool) {
 	var x1, x2, y1, y2 int
-	n, _ := fmt.Scanf("%d,%d -> %d,%d\n", &x1, &x2, &y1, &y2)
+	n, _ := fmt.Scanf("%d,%d -> %d,%d\n", &x1, &y1, &x2, &y2)
 	if n == 0 {
 		return vector{}, false
 	}
-	return vector{x1, x2, y1, y2}, true
+	return vector{x1, y1, x2, y2}, true
 }
 
 func main() {
